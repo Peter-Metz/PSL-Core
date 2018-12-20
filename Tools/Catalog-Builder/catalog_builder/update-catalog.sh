@@ -8,4 +8,6 @@ git status
 git add -u
 git commit -m "Update catalog for date $DATE"
 git push origin catalog-$DATE
-git request-pull origin/test_automation $BRANCH_NAME
+git checkout test_automation
+git pull origin $BRANCH_NAME
+git push origin test_automation
