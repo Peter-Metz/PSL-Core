@@ -2,7 +2,7 @@
 
 export DATE=`date +%Y-%m-%d`
 export BRANCH_NAME=catalog-$DATE
-git checkout $BRANCH_NAME
+git checkout -b $BRANCH_NAME
 python catalog.py 
 git status
 git add -u
