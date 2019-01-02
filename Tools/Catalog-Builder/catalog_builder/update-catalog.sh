@@ -9,5 +9,5 @@ git add -u
 git commit -m "Update catalog for date $DATE"
 git push origin catalog-$DATE
 git checkout test_automation
-git pull origin $BRANCH_NAME
+git pull --no-edit origin $BRANCH_NAME
 git push origin test_automation
