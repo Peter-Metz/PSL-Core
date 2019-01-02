@@ -113,7 +113,7 @@ class CatalogBuilder:
                 if config["type"] == "github_file":
                     value = utils.get_from_github_api(project, config)
                     source = (
-                        f"git@github.com/{project['org']}.git"
+                        f"https://github.com/{project['org']}/"
                         f"{project['repo']}/blob/{project['branch']}/"
                         f"{config['source']}"
                     )
