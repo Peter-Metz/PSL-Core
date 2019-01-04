@@ -1,3 +1,4 @@
+import sys
 import json
 import os
 from collections import defaultdict
@@ -180,6 +181,7 @@ class CatalogBuilder:
 
 
 if __name__ == "__main__":
+    print(sys.version_info)
     cb = CatalogBuilder()
     cb.load_catalog()
     cb.write_pages()
