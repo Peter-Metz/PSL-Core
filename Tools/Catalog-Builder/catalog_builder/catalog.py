@@ -1,6 +1,7 @@
 import json
 import os
 from collections import defaultdict
+import sys
 
 from catalog_builder import utils
 
