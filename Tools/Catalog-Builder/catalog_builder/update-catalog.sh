@@ -12,4 +12,3 @@ git push origin catalog-$DATE
 git checkout test_automation
 git pull --no-edit origin $BRANCH_NAME
 git push origin test_automation
-git checkout catalog-update
