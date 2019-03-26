@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd $HOME/build_catalog/PSL/Tools/Catalog-Builder/catalog_builder
+cd $HOME/PSL-Core/Tools/Catalog-Builder/catalog_builder
 export DATE=`date +%Y-%m-%d`
 export BRANCH_NAME=catalog-$DATE
 git checkout -b $BRANCH_NAME
@@ -10,8 +10,6 @@ git status
 git add -u
 git commit -m "Update catalog for date $DATE"
 git push origin catalog-$DATE
-git checkout master
+git checkout automation
 git pull --no-edit origin $BRANCH_NAME
-git push origin master
-git branch -D $BRANCH_NAME
-git push origin --delete $BRANCH_NAME
+git push origin automation
